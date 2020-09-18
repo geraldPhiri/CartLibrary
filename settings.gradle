@@ -1,3 +1,4 @@
+include ':CartLibrary'
 include ':CartLib'
 include ':CartLibrary'
 include ':app'

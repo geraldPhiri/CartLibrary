@@ -1,7 +1,7 @@
-package g.o.cartlib;
+package g.o.cartlibrary;
 
 
-class CartItem{
+public class CartItem{
     private String count;
     private String price;
     private String name;

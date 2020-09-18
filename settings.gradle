@@ -1,0 +1,4 @@
+include ':CartLib'
+include ':CartLibrary'
+include ':app'
+rootProject.name = "CartSample"

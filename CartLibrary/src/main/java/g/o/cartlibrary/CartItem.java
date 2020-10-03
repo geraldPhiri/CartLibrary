@@ -1,6 +1,8 @@
 package g.o.cartlibrary;
 
 
+import androidx.annotation.Nullable;
+
 public class CartItem{
     private String count;
     private String price;
@@ -8,11 +10,16 @@ public class CartItem{
     private String url;
 
 
-    public CartItem(String name, String price, String url) {
+    public CartItem(String name, String price, String url, @Nullable String count) {
         this.name = name;
         this.price = price;
         this.url = url;
-        count="1";
+
+        this.count = "1";
+        if(count!=null){
+            this.count=count;
+        }
+
     }
 
 
@@ -47,4 +54,6 @@ public class CartItem{
     public String getUrl() {
         return url;
     }
+
+
 }//CartItem

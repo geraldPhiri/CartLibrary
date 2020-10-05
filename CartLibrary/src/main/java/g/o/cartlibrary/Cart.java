@@ -33,13 +33,10 @@ public class Cart {
                     FileInputStream fis2 = activity.openFileInput(scanner.nextLine());
                     Scanner scanner2=new Scanner(fis2);
 
-                    CartItem cartItem=new CartItem(scanner2.nextLine()
-                            ,scanner2.nextLine()
-                            ,scanner2.nextLine()
-                            ,scanner2.nextLine());
+                    add(scanner2.nextLine(),scanner2.nextLine(),
+                            scanner2.nextLine(),scanner2.nextLine());
 
-
-                }
+                }//while
 
             }
             catch (Exception e){

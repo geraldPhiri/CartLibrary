@@ -13,7 +13,7 @@ public class Cart {
     private static Activity activity;
 
     private final String FILE_CART="cart_file";
-    private final String FILE_ISPERSIST="cart_persist";
+    private final static String FILE_ISPERSIST="cart_persist";
     private static Map cart=null;
 
     private static boolean isPersist=false;
@@ -123,7 +123,7 @@ public class Cart {
     }//save
 
 
-    public void setPersist(boolean persist) {
+    public static void setPersist(boolean persist) {
         isPersist = persist;
         try {
             FileOutputStream fos=activity.openFileOutput(FILE_ISPERSIST,0);
@@ -136,6 +136,7 @@ public class Cart {
         catch (Exception e){
 
         }
+
     }//setPersist
 
 

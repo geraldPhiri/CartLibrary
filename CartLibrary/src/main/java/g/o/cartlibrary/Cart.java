@@ -16,7 +16,7 @@ public class Cart {
     private final String FILE_ISPERSIST="cart_persist";
     private static Map cart=null;
 
-    private boolean isPersist=false;
+    private static boolean isPersist=false;
 
 
     public Cart(Activity activity){
